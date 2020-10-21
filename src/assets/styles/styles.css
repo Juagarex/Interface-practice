@@ -1,0 +1,117 @@
+/*fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+
+
+:root{
+    --color-Primary:rgb(255,136, 0);
+}
+/*conf initial*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.debugger{
+    border: 1px solid red;
+}
+/* header */
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 55px;
+}
+
+.header__container{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+
+ .header__container--nav{
+     justify-content: flex-end;
+     align-content: flex-end;
+     display: flex;
+ }
+ 
+ .header__container--nav ul {
+   display:flex;
+   justify-content: center;
+   list-style: none;
+    
+ }
+
+ .header__container--nav ul a{
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     color: black;
+
+ }
+ .header__container--nav ul li {
+     padding: 1.5em;
+  }
+
+  /* Hero Section */
+  .hero{
+      padding-top: 7em;
+      width: 100%;
+      height: 50vh;
+  }
+  .hero__container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 6.5em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #hero--title{
+    font-family: 'Rozha One', serif;
+    font-size: 5em;
+    letter-spacing: 1.5px;
+    line-height: 1.2em;
+    font-weight: 200;
+    color: var(--colorprincipal);
+  }
+
+  .form__container{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      border-radius: 15px;
+      border: 1px black solid;
+      padding: 5px;
+      width: 60%;
+      justify-items: space-between;
+  }
+  .form__item{
+      display: flex;
+      width:100%;
+      justify-content: space-around;
+  }
+
+  .form__container input{
+    border-left-color:var(--color-Primary) !important;
+    border-color: none;
+    border-style: none;
+    outline: none;
+  }
+
+  .form__container select{
+      height: 30px;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+  }
+
+
+
+
+
+  
+
+ 
