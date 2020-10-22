@@ -82,30 +82,54 @@ justify-content: flex-end;
       display: flex;
       align-items: center;
       height: 40px;
-      border-radius: 15px;
+      border-radius: 10px;
       border: 1px black solid;
-      padding: 5px;
-      width: 60%;
+      padding: 0px 0px 0px 5px;
+      width: 50%;
       justify-items: space-between;
+      position: relative;
   }
-  .form__item{
-      display: flex;
+  .form__item {
       width:100%;
-      justify-content: space-around;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      align-content: center;
   }
 
   .form__container input{
-    border-left-color:var(--color-Primary) !important;
-    border-color: none;
-    border-style: none;
-    outline: none;
+      display: flex;
+      align-items: center;
+      border-left-color:var(--color-Primary) !important;
+      border-style: none;
+      outline: none;
+      padding: 0px;
+      width: 80%;
+      margin-left: 45px;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
   }
 
   .form__container select{
-      height: 30px;
-      padding: 0;
-      margin: 0;
-      flex-direction: column;
+      position: absolute; 
+      top: -1px;
+      bottom: -1px;
+      right: 0px;
+      border-radius: 10px;
+      background-color: var(--color-Primary);
+      border-color: var(--color-Primary);
+
+
+      
+  }
+  .form__container span{
+      display: flex;
+      position: absolute;
+      top: 3px;
+      bottom: 1px;
+      align-items: center;
+      
   }
 
 
