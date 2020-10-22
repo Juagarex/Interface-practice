@@ -1,16 +1,23 @@
 /*fuente*/
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+
 
 
 
 :root{
-    --color-Primary:rgb(255,136, 0);
+    --color-Primary:#ff8800;
+    --color-Title:#0d0d25;
+    --color-Text:#5d5d79;
+    --font-Principal: 'Rozha One', serif;
+    --font-boby:'Sora', sans-serif;
 }
 /*conf initial*/
 
 *{
     padding: 0px;
     margin: 0px;
+    font-family: var(--font-boby);
 }
 
 .debugger{
@@ -40,6 +47,7 @@ justify-content: flex-end;
    display:flex;
    justify-content: center;
    list-style: none;
+   
     
  }
 
@@ -52,10 +60,12 @@ justify-content: flex-end;
  }
  .header__container--nav ul li {
      padding: 1.5em;
+     color: var(--color-Text);
+     font-weight: 600;
   }
 
   /* Hero Section */
-  .hero{
+  .heroImage{
       display: inline;
       position: absolute;
       top:0px;
@@ -66,41 +76,43 @@ justify-content: flex-end;
       width: 100%;
       height: 60vh;
       background-image: url('../images/heroimage.jpg');
-      background-size:contain;
-      background-position: center;
+      background-size:cover;
+      background-position: inherit;
       background-repeat: no-repeat;
-      object-fit: contain;
+      object-fit: cover;
   }
   .hero__container{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: 6.5em;
+    padding-left: 7em;
     box-sizing: content-box;
     position: relative;
     top: 0px;
     bottom: 0px;
+    
   }
 
   #hero--title{
     font-family: 'Rozha One', serif;
-    font-size: 4em;
+    font-size: 7em;
     letter-spacing: 1.5px;
     line-height: 1.2em;
     font-weight: 200;
-    color: var(--colorprincipal);
+    color: var(--color-Title);
   }
 
   .form__container{
       display: flex;
       align-items: center;
-      height: 40px;
+      height: 50px;
       border-radius: 10px;
-      border: 1px black solid;
-      padding: 0px 0px 0px 5px;
+      border: 1px solid;
+      padding: 0px;
       width: 50%;
-      justify-items: space-between;
       position: relative;
+      border-color: var(--color-Text);
+      background-color: white;
   }
   .form__item {
       width:100%;
@@ -111,9 +123,9 @@ justify-content: flex-end;
   }
 
   .form__container input{
+      color:#d4d4d4;
       display: flex;
       align-items: center;
-      border-left-color:var(--color-Primary) !important;
       border-style: none;
       outline: none;
       padding: 0px;
@@ -122,27 +134,52 @@ justify-content: flex-end;
       position: absolute;
       top: 0px;
       bottom: 0px;
+      font-size: 1em;
+      
   }
 
   .form__container select{
       position: absolute; 
       top: -1px;
       bottom: -1px;
-      right: 0px;
+      right: -1px;
       border-radius: 10px;
       background-color: var(--color-Primary);
       border-color: var(--color-Primary);
+      padding: 0 30px 0 30px;
+      line-height: 15px;
+      letter-spacing: 0.8px;
+      color: white;
+      font-weight: 400;
 
 
       
   }
   .form__container span{
+
       display: flex;
       position: absolute;
-      top: 3px;
-      bottom: 1px;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
       align-items: center;
+      background-color: white;
+      padding-left: 5px;
+      border-radius: 10px;
+      border-right: 5px ;
       
+  }
+
+
+  .hero__container--social{
+font-size: 1.2em;
+margin-top: 2em;
+  }
+
+  .hero__container--social a{
+      text-decoration:  none;
+      color: var(--color-Primary);
+
   }
 
 
