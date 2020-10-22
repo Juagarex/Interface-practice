@@ -56,22 +56,35 @@ justify-content: flex-end;
 
   /* Hero Section */
   .hero{
+      display: inline;
+      position: absolute;
+      top:0px;
+      left: 0px;
+      right: 0px;
+      z-index: -1;
       padding-top: 7em;
       width: 100%;
-      height: 50vh;
+      height: 100vh;
+      background-image: url('../images/heroimage.jpg');
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: contain;
   }
   .hero__container{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding-left: 6.5em;
-    width: 100%;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
   }
 
   #hero--title{
     font-family: 'Rozha One', serif;
-    font-size: 5em;
+    font-size: 4em;
     letter-spacing: 1.5px;
     line-height: 1.2em;
     font-weight: 200;
