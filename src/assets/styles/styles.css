@@ -194,7 +194,6 @@ margin-top: 2em;
 
   .about{
       position: relative;
-      border: 1px solid blue;
       display: flex;
       width: 99.9%;
       top: 0px;
@@ -221,18 +220,20 @@ margin-top: 2em;
       align-content: center;
       width: 60%;
       margin-top: 2rem;
-      background-color: #b6afaf8a; 
+      background-color: #ddd4d48a; 
       margin-right: 6rem;
       
   }
 
-  #title__about{
+
+  /* class general for title and subtitle on page */
+  .title{
       color: var(--color-Primary);
       margin: 15px 10px;
       font-size: 1.2rem;
       font-weight: 100;
   }
-  #subtitle{
+  .subtitle{
     font-family: 'Rozha One', serif;
     font-size: 5.5em;
     letter-spacing: 1.5px;
@@ -241,6 +242,8 @@ margin-top: 2em;
     color: var(--color-Title); 
     padding-left: 25px;
   }
+
+  /*-- end class general--*/
 
   .about__container--article{
       margin: 5px;
@@ -272,3 +275,125 @@ margin-top: 2em;
     height: 50px;
 
   }
+
+  /* section menu */
+
+  .menu{
+      padding-top: 2rem;
+    position: relative;
+    display: flex;
+    width: 99.9%;
+    top: 0px;
+    border: 1px solid blue;
+    justify-content: center;
+    
+}
+
+.menu__container{
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ border: 1px solid green;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.menu__galery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;-
+
+  width: 100%;
+}
+
+
+
+/* Style the tab */
+.tab {
+      display:flex;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      justify-content:center;
+      align-items: center;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      width: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 75px;
+      margin: 55px;
+    }
+
+    #Breakfast{
+      display: grid;
+      
+    }
+
+    .card{
+      display: flex;
+      flex-direction: column;
+      width: 275px;
+      height: 350px;
+      border: 1px solid red;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: center;
+      background-image: url('../images/breakfast.jpg');
+      background-position: center;
+      background-size: cover;
+      object-fit: contain;
+      background-repeat: no-repeat;
+
+      
+    }
+
+    .card__price{
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--color-Text);
+    }
+    .card__raiting{
+      font-size: 1.6rem;
+    }
+    .card__name{
+      font-size: 2.3rem;
+      font-weight: 900;
+      color: white;
+
+
+
+    }
+
+
+
