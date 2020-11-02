@@ -47,7 +47,7 @@ function carusel(contenedor) {
   });
 }
 
-document.addEventListener("DOMcontentloaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   let contenedor = document.querySelector('.container__video');
   carusel(contenedor);
 })
