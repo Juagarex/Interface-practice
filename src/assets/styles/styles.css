@@ -19,6 +19,10 @@
     padding: 0px;
     margin: 0px;
     font-family: var(--font-boby);
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
 }
 
 .debugger{
@@ -50,6 +54,7 @@ justify-content: flex-end;
    display:flex;
    justify-content: center;
    list-style: none;
+   font-size: 1.5rem;
    
     
  }
@@ -106,7 +111,7 @@ justify-content: flex-end;
 
   #hero--title{
     font-family: 'Rozha One', serif;
-    font-size: 6em;
+    font-size: 11rem;
     letter-spacing: 1.5px;
     line-height: 1.2em;
     font-weight: 200;
@@ -146,7 +151,7 @@ justify-content: flex-end;
       position: absolute;
       top: 0px;
       bottom: 0px;
-      font-size: 1em;
+      font-size: 1.8rem;
       
   }
 
@@ -184,8 +189,8 @@ justify-content: flex-end;
 
 
   .hero__container--social{
-font-size: 1.2em;
-margin-top: 2em;
+font-size: 1.9rem;
+margin-top: 2.8rem;
   }
 
   .hero__container--social a{
@@ -235,7 +240,7 @@ margin-top: 2em;
     
       color: var(--color-Primary);
       margin: 15px 10px;
-      font-size: 1.2rem;
+      font-size: 2rem;
       font-weight: 100;
       text-align: center;
   }
@@ -243,7 +248,7 @@ margin-top: 2em;
     margin:0;
     padding: 0;
     font-family: 'Rozha One', serif;
-    font-size: 5.5em;
+    font-size: 7.5rem;
     letter-spacing: 1.5px;
     line-height: 1.2em;
     font-weight: 200;
@@ -261,6 +266,7 @@ margin-top: 2em;
       font-weight: 600;
       color: var(--color-Text);
       line-height: 1.8em;
+      font-size: 1.8rem;
   }
 
 .about__container--button{
@@ -337,7 +343,7 @@ margin-top: 2em;
       cursor: pointer;
       padding: 14px 20px;
       transition: 0.3s;
-      font-size: 17px;
+      font-size: 1.7rem;
       color: var(--color-Text);
 
     }
@@ -398,15 +404,15 @@ margin-top: 2em;
 
 
     .card__price{
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       color: var(--color-Text);
     }
     .card__raiting{
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
     .card__name{
-      font-size: 2.3rem;
+      font-size: 2.8rem;
       font-weight: 900;
       color: white;
     }
@@ -416,7 +422,7 @@ margin-top: 2em;
       background-color: var(--color-Primary);
       border: none;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       width: 125px;
       height: 55px;
       font-weight: 100;
@@ -456,113 +462,171 @@ margin-top: 2em;
       width: 90%;
       margin-top: 2rem;
       margin-bottom: 2rem;
+      font-size: 1.5rem;
       
 
     }
 
     .numberContact{
-      font-size: 2rem;
+      font-size: 2.8rem;
     }
 
     .hoursAtention{
       display: flex;
       width: 50%;
       justify-content: space-around;
-      font-size: 1.4rem;
+      font-size: 2.4rem;
       font-weight: 400;
       margin-top: 2rem;
 
     }
 
-
-    .container__slider{
+    .container__slider__video{
       display: flex;
       width: 100%;
       height: min-content;
       border: 1px solid red;
       justify-items: center;
       justify-content: center;
-     
-      
     }
 
-    .slider{
+    .container__video{
       display: flex;
       width: 100%;
       justify-content: center;
       margin: auto;
       background-color: white;
-      width: 800px;
+      width:900px;
       height: min-content;
       padding: 30px;
       border: 1px solid red;
       position: relative;
     }
-  .slider ul li{
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+    .container__slider__video  video {
+      width: 100%;
+      height: 0 auto;
+      object-fit: cover; 
+      }
+
+    .botones{
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color:  rgba(0, 0, 0, .7);
+  text-align: center;
+  align-items: baseline;
+  font-weight: bold;
+  position: absolute;
+  color: #ffffff;
+}
+
+    .botones:hover{
+      cursor: pointer;
+      transform: scale(1.2,1.2);
+    }
+     .atras{
+       left: -5%;
+       top:calc(50% - 50px);
+     }
+     .adelante{
+       right: -5%;
+       top:calc(50% - 50px);
+     }
+
+
+
+
+
+
+/* section blog */
+
+.container__slider{
+  display: flex;
+  width: 100%;
+  /* height: min-content; */
+  border: 1px solid yellow;
+  justify-items: center;
+  justify-content: center;
+}
+
+.slider{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  width: 800px;
+  height: min-content;
+  padding: 30px;
+  border: 1px solid red;
+  position: relative;
+}
+.slider ul li{
+text-decoration: none;
+list-style: none;
+margin: 0;
+padding: 0;
 
 }
 
 
 ul.slider__list{
-  margin-top: 2rem;
-  height: 540px;
-  
+margin-top: 2rem;
+height: 540px;
+
 }
 
- ul.slider__list li{
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0;
-   width: inherit;
-   height: inherit;
- }
+ul.slider__list li{
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+width: inherit;
+height: inherit;
+}
 
 
 ul.slider__list li video {
-   width: 100%;
-   height:min-content; 
-   
-   
-   object-fit: cover; 
+width: 100%;
+height:min-content;
+object-fit: cover; 
 }
 
 
 ul.slider__list li:first-child {
-  opacity: 1; /*Mostramos el primer <li>*/
+opacity: 1; /*Mostramos el primer <li>*/
 }
 
 ul.slider__list li:target {
-  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
 }
 .slider__menu{
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  
+position: absolute;
+bottom: 0;
+display: flex;
+width: 100%;
+justify-content: center;
+
 
 }
 
 
 .slider__menu li{
-  display: inline-block;
-  text-align: center;
+display: inline-block;
+text-align: center;
 }
 
 .slider__menu li a{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-color: grey;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  border-radius: 100%;
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
 }
