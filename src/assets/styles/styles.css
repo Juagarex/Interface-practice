@@ -111,7 +111,7 @@ justify-content: flex-end;
 
   #hero--title{
     font-family: 'Rozha One', serif;
-    font-size: 11rem;
+    font-size: 10rem;
     letter-spacing: 1.5px;
     line-height: 1.2em;
     font-weight: 200;
@@ -452,6 +452,9 @@ margin-top: 2.8rem;
       width: 100%;
       justify-content: center;
       align-content: center;
+      background-color: var(--color-Menu);
+     
+      
     }
 
     .order__container{
@@ -463,7 +466,7 @@ margin-top: 2.8rem;
       margin-top: 2rem;
       margin-bottom: 2rem;
       font-size: 1.5rem;
-      
+       
 
     }
 
@@ -485,7 +488,6 @@ margin-top: 2.8rem;
       display: flex;
       width: 100%;
       height: min-content;
-      border: 1px solid red;
       justify-items: center;
       justify-content: center;
     }
@@ -495,11 +497,10 @@ margin-top: 2.8rem;
       width: 100%;
       justify-content: center;
       margin: auto;
+      margin-top: 2rem;
       background-color: white;
-      width:900px;
+      width:800px;
       height: min-content;
-      padding: 30px;
-      border: 1px solid red;
       position: relative;
     }
 
@@ -510,18 +511,22 @@ margin-top: 2.8rem;
       }
 
     .botones{
-  font-size: 2rem;
+      
+  font-size: 1.5rem;
   width: 50px;
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background-color:  rgba(0, 0, 0, .7);
+  background-color: white;
   text-align: center;
   align-items: baseline;
   font-weight: bold;
   position: absolute;
   color: #ffffff;
   transition: all .3s ease;
+  color: var(--color-Primary);
+  border-color: var(--color-Primary);
+  border: 1px solid;
 }
 
     .botones:hover{
@@ -529,11 +534,11 @@ margin-top: 2.8rem;
       transform: scale(1.2,1.2);
     }
      .atras{
-       left: -5%;
+       left: -8%;
        top:calc(50% - 50px);
      }
      .adelante{
-       right: -5%;
+       right: -8%;
        top:calc(50% - 50px);
      }
 
@@ -544,25 +549,27 @@ margin-top: 2.8rem;
 
 /* section blog */
 
-.container__slider{
+
+.blog{
+  margin-top:2rem; 
+}
+
+.container__test{
   display: flex;
   width: 100%;
-  /* height: min-content; */
-  border: 1px solid yellow;
   justify-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .slider{
   display: flex;
-  width: 100%;
   justify-content: center;
   margin: auto;
   background-color: white;
-  width: 800px;
-  height: min-content;
+  width: 80%;
   padding: 30px;
-  border: 1px solid red;
+
   position: relative;
 }
 .slider ul li{
@@ -580,13 +587,19 @@ height: 540px;
 
 }
 
-ul.slider__list li{
+ul.slider__list li {
+opacity: 0;
 position: absolute;
+display: flex;
 top: 0;
 left: 0;
-opacity: 0;
-width: inherit;
-height: inherit;
+right: 0;
+bottom: 0;
+background-color: white;
+justify-items: center;
+align-content: center;
+align-items: center;
+
 }
 
 
@@ -596,14 +609,16 @@ height:min-content;
 object-fit: cover; 
 }
 
-
-ul.slider__list li:first-child {
-opacity: 1; /*Mostramos el primer <li>*/
+ ul.slider__list li:first-child{
+  opacity: 1;
 }
+
 
 ul.slider__list li:target {
 opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
 }
+
+
 .slider__menu{
 position: absolute;
 bottom: 0;
@@ -624,10 +639,177 @@ text-align: center;
 display: inline-block;
 color: white;
 text-decoration: none;
-background-color: grey;
+background-color:var(--color-Primary);
 padding: 10px;
 width: 20px;
 height: 20px;
 font-size: 20px;
 border-radius: 100%;
+transition: all .3s ease;
 }
+.slider__menu li a:hover{
+  transform: scale(0.7);
+}
+
+
+
+
+
+.card__review{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.card__review--photo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+}
+
+.card__review p{
+  margin: 15px;
+}
+.card__review--name{
+  margin: 20px;
+}
+
+#slider1 div.card__review--photo{
+  background-image: url('../images/perfil.jpg');
+}
+#slider2 div.card__review--photo{
+  background-image: url('../images/perfil2.jpg');
+}
+
+#slider3 div.card__review--photo{
+  background-image: url('../images/perfil3.jpg');
+}
+
+
+.card__review--photo img{
+  width: 100%;
+  overflow: hidden;
+}
+.card__review article{
+  margin: 0 2rem;
+  color: var(--color-Text);
+  font-family: var(--font-boby);
+  text-align: center;
+  line-height: 3.5rem;
+  letter-spacing: 0.3rem;
+}
+
+/*section location */
+
+.location{
+  width: 100%;
+  display: flex;
+  background-color: var(--color-Menu);
+  justify-content: center;
+  height: 250px;
+
+}
+
+.container__location{
+display: flex;
+width: 90%;
+}
+
+
+.container__location--list{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.container__location--img{
+  font-size: 1.5rem;
+  color: var(--color-Text);
+  font-family: var(--font-boby);
+  font-weight: 500;
+  display: flex;
+  width: 250px;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  text-align: justify;
+  height: 100%;
+  
+  
+}
+
+.container__location--img img{
+  width: 150px;
+  height: 0 auto;
+}
+
+.container__location--hours{
+display: flex;
+flex-direction: column;
+width:250px;
+height: 100%;
+justify-content: space-evenly;
+align-items: center;
+list-style: none;
+margin-left: 1.2rem;
+font-size: 1.5rem;
+}
+.us{
+  width: 310px;
+}
+
+.us a{
+  color: var(--color-Primary);
+}
+
+.title__location{
+font-size: 3.5rem;
+font-family: var(--font-Principal);
+font-weight: 400;
+}
+
+.container__location--hours ul{
+  list-style: none;
+}
+
+.container__location--hours ul li{
+  padding: 0.8rem;
+  color: var(--color-Text);
+font-family: var(--font-boby);
+font-weight: 600;
+}
+
+
+.letter{
+  width: 100%;
+  position: relative;
+}
+
+.letter input{
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid var(--color-Text);
+  border-radius:10px;
+  outline: none;
+}
+
+.letter form span{
+  position: relative;
+  left:-20% ;
+}
+
+
+

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/assets/styles/styles.css">
-    
+
     <title>Interface Practice</title>
 </head>
 
@@ -24,10 +24,10 @@
                     <a href="#menu">
                         <li>Menu</li>
                     </a>
-                    <a href="">
+                    <a href="#order">
                         <li>Order Now</li>
                     </a>
-                    <a href="">
+                    <a href="#blog">
                         <li> Blog</li>
                     </a>
                     <a href="">
@@ -262,10 +262,12 @@
 
 
     </section>
+
+
     <!-- section orden -->
 
-
     <section class="order">
+
         <div class="order__container">
             <h4 class="title"> Book table</h4>
             <h1 class="subtitle"> Opening Hours</h1>
@@ -304,20 +306,66 @@
 
         </div>
 
+
     </section>
-    <section class="blog">
-        <div class="container__slider">
+
+    <!-- section blog  -->
+
+    <section class="blog" id="blog">
+        <div class="container__test">
+
+            <h4 class="title"> Testimonials</h4>
+            <h1 class="subtitle">Custumer Say</h1>
             <div class="slider">
                 <ul class="slider__list">
                     <li id="slider1">
+                        <div class="card__review">
+                            <div class="card__review--photo"> </div>
+                            <h3 class="card__review--name">Mr Jonh Smith </h3>
+                            <h4 class="card__review--position"> Art Director </h4>
+                            <p>⭐⭐⭐⭐</p>
+                            <article>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam quae
+                                possimus explicabo accusamus ducimus, soluta veniam delectus reprehenderit quisquam
+                                repudiandae expedita porro!
+                            </article>
 
-                      
+                        </div>
+
+
                     </li>
                     <li id="slider2">
-                       
+                        <div class="card__review">
+                            <div class="card__review--photo">
+                            </div>
+                            <h3 class="card__review--name"> Ms Emili Williams </h3>
+                            <h4 class="card__review--position"> Engineer Foods</h4>
+                            <p>⭐⭐⭐⭐</p>
+                            <article>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam quae
+                                possimus explicabo accusamus ducimus, soluta veniam delectus reprehenderit quisquam
+                                repudiandae expedita porro!
+                            </article>
+
+                        </div>
+
                     </li>
                     <li id="slider3">
-                        
+                        <div class="card__review">
+                            <div class="card__review--photo">
+                            </div>
+                            <h3 class="card__review--name">Ms Juanita Corredor</h3>
+                            <h4 class="card__review--position">Develoment Web</h4>
+                            <p>⭐⭐⭐⭐</p>
+                            <article>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam quae
+                                possimus explicabo accusamus ducimus, soluta veniam delectus reprehenderit quisquam
+                                repudiandae expedita porro!
+                            </article>
+
+                        </div>
+
+
                     </li>
                 </ul>
 
@@ -332,11 +380,64 @@
             </div>
 
         </div>
-        <div>
-
-        </div>
     </section>
 
+    <!--  -->
+    <section class="location" id="location">
+        <div class="container__location">
+            <ul class="container__location--list">
+                <li>
+                    <div class="container__location--img">
+                        <img src="./src/assets/images/cuisine.png" alt="">
+                        <article>
+                            Just Like a perfectly baked pastry, we created Cuisine with a special love and it shows
+                        </article>
+                    </div>
+                </li>
+                <li>
+                    <div class="container__location--hours ">
+                        <h2 class="title__location"> Open Hours</h2>
+                        <ul>
+                            <li>Mon-Fri: 9 AM - 6 PM </li>
+                            <li>Saturday: 9 AM - 4 PM</li>
+                            <li>Sunday: Closed </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="container__location--hours  us">
+                        <h2 class="title__location"> Contact Us</h2>
+                        <ul>
+                            <li>176 W strert name, New York,NY 10014 </li>
+                            <li>Email: <a href="#">info@yoursite.com</a></li>
+                            <li>Telefone: <a href="#">+1(800)123-4566</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="container__location--hours letter ">
+
+                        <h2 class="title__location"> Suscribe Newletter</h2>
+
+                        <form action="">
+                            <input type="text" placeholder="Email Address">
+                            <span> icon</span>
+                        </form>
+
+
+
+
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+
+
+    </section>
 
 
     <script src="./src/assets/logic/index.js"></script>
