@@ -191,6 +191,11 @@ justify-content: flex-end;
   .hero__container--social{
 font-size: 1.9rem;
 margin-top: 2.8rem;
+
+  }
+
+  .hero__container--social span{
+    padding: 0px   15px;;
   }
 
   .hero__container--social a{
@@ -798,12 +803,19 @@ font-weight: 600;
   position: relative;
 }
 
+.message {
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+}
+
 .letter input{
   height: 50px;
   padding-left: 10px;
   border: 1px solid var(--color-Text);
   border-radius:10px;
   outline: none;
+  justify-content: center;
 }
 
 .letter form span{
@@ -823,4 +835,13 @@ footer{
 .footer{
   background-color: var(--color-Menu);
   border-top: 1px solid var(--color-Text);
+}
+.icons__footer span{
+  padding:0px 20px;
+}
+.icon_footer{
+  width: 40px;
+
+
+
 }
