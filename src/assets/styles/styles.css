@@ -152,7 +152,6 @@ justify-content: flex-end;
       top: 0px;
       bottom: 0px;
       font-size: 1.8rem;
-      
   }
 
   .form__container select{
@@ -188,11 +187,7 @@ justify-content: flex-end;
   }
 
 
-  .hero__container--social{
-font-size: 1.9rem;
-margin-top: 2.8rem;
-
-  }
+  .hero__container--social{font-size: 1.9rem;margin-top: 2.8rem;}
 
   .hero__container--social span{
     padding: 0px   15px;;
@@ -234,9 +229,8 @@ margin-top: 2.8rem;
       align-content: center;
       width: 60%;
       margin-top: 2rem;
-      background-color: #ddd4d48a; 
+      background-color: #ddd4d48a;
       margin-right: 6rem;
-      
   }
 
 
@@ -720,12 +714,15 @@ transition: all .3s ease;
   background-color: var(--color-Menu);
   justify-content: center;
   height: 250px;
+  
 
 }
 
 .container__location{
-display: flex;
-width: 90%;
+  width: 100%;
+  
+  
+  
 }
 
 
@@ -734,8 +731,11 @@ width: 90%;
   list-style: none;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
+   width: 100%; 
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 0auto;
+   position: absolute;
 }
 
 .container__location--img{
@@ -764,16 +764,12 @@ width: 90%;
 .container__location--hours{
 display: flex;
 flex-direction: column;
-width:250px;
-height: 100%;
-justify-content: space-evenly;
+width: 20%;
 align-items: center;
 list-style: none;
 margin-left: 1.2rem;
 font-size: 1.5rem;
-}
-.us{
-  width: 310px;
+
 }
 
 .us a{
@@ -787,20 +783,21 @@ font-weight: 400;
 }
 
 .container__location--hours ul{
-  list-style: none;
+ list-style: none;
 }
 
 .container__location--hours ul li{
   padding: 0.8rem;
   color: var(--color-Text);
-font-family: var(--font-boby);
-font-weight: 600;
+  font-family: var(--font-boby);
+  font-weight: 600;
+  list-style: n;
 }
 
 
 .letter{
-  width: 100%;
-  position: relative;
+
+/* display: none; */
 }
 
 .message {

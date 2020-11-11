@@ -1,0 +1,115 @@
+/*Media querys files*/
+
+
+@media screen and (min-width:1400px) and ( max-width:1800px) {
+
+
+#hero--title{
+    font-size: 7rem;
+    
+}
+
+
+}
+
+@media screen and (min-width:1200px) and ( max-width:1399px) {
+    #hero--title{
+        font-size: 6rem;
+
+        
+    }
+    
+    
+    }
+
+
+    @media screen and (min-width:800px) and ( max-width:1199px) {
+        #hero--title{
+            font-size: 6rem;
+    
+            
+        }
+        
+        
+        }
+
+
+
+
+        @media screen and (min-width:500px) and ( max-width:799px) {
+            #hero--title{
+                font-size: 5.5rem;
+            }
+
+            .container__location--list{
+            font-size: 1rem;
+
+            }
+
+            
+            .form__container{
+                width: 80%;
+                margin-top: 5rem;
+                height: 45px;
+            }
+
+            .title{
+                font-size: 1.5rem;
+
+            }
+
+            .subtitle{
+                font-size:5rem ;
+            }
+            .about__container{
+                width: 80%;
+
+            }
+
+
+
+            
+            
+            }@media screen and (min-width:300px) and ( max-width:499px) {
+                
+                .hero__container{
+                    padding-left: 2rem;
+                }
+
+                .hero__container--social {
+                    font-size: 1.5rem;
+                }
+             
+
+                .form__container{
+                    width: 90%;
+                    margin-top: 3rem;
+                    height: 35px;
+                }
+
+                #hero--title{
+                    font-size: 4rem;
+                }
+    
+                .container__location--list{
+                font-size: 1rem;
+    
+                }
+
+                .subtitle{
+                    font-size: 4rem;
+                }
+    
+                .about__container{
+                    width: 80%;
+    
+                }
+
+                .hoursAtention{
+                    width: 100%;
+                    font-size: 2.2rem;
+                    text-align: center;
+                }
+    
+                
+                }
