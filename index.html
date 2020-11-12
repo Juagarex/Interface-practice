@@ -13,7 +13,7 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="header__container ">
+        <div class="header__container topnav" id="myTopnav">
             <nav class="header__container--nav ">
                 <ul>
                     <a href="#Home">
@@ -40,6 +40,8 @@
                     <a href="">
                         <li><img style="width: 30px;" src="/src/assets/images/car.svg" alt="" srcset=""></li>
                     </a>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img  style="width: 30px;" src="/src/assets/images/cuadrado.svg"alt="" srcset=""></a>
                 </ul>
             </nav>
 
@@ -389,52 +391,47 @@
 
     <!--  -->
     <section class="location" id="location">
-        <div class="container__location">
-            <div class="container__location--list">
+        <div class="container__location--list">
 
-                <div class="container__location--img">
-                    <img src="./src/assets/images/cuisine.png" alt="">
-                    <article>
-                        Just Like a perfectly baked pastry, we created Cuisine with a special love and it shows
-                    </article>
-                </div>
+            <div class="container__location--img">
+                <img src="./src/assets/images/cuisine.png" alt="">
+                <article>
+                    Just Like a perfectly baked pastry, we created Cuisine with a special love and it shows
+                </article>
+            </div>
 
-                <div class="container__location--hours ">
-                    <h2 class="title__location"> Open Hours</h2>
-                    <ul>
-                        <li>Mon-Fri: 9 AM - 6 PM </li>
-                        <li>Saturday: 9 AM - 4 PM</li>
-                        <li>Sunday: Closed </li>
-                    </ul>
-
-                </div>
-
-                <div class="container__location--hours  us">
-                    <h2 class="title__location"> Contact Us</h2>
-                    <ul>
-                        <li>176 W strert name, New York,NY 10014 </li>
-                        <li>Email: <a href="#">info@yoursite.com</a></li>
-                        <li>Telefone: <a href="#">+1(800)123-4566</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="container__location--hours letter ">
-
-                    <h2 class="title__location"> Suscribe Newletter</h2>
-
-                    <form class="message" action="">
-                        <input type="text" placeholder="Email Address">
-                        <span><img style="width: 25px;" src="/src/assets/images/mensaje.svg" alt="" srcset=""></span>
-                    </form>
-
-
-
-
-                </div>
+            <div class="container__location--hours ">
+                <h2 class="title__location"> Open Hours</h2>
+                <ul>
+                    <li>Mon-Fri: 9 AM - 6 PM </li>
+                    <li>Saturday: 9 AM - 4 PM</li>
+                    <li>Sunday: Closed </li>
+                </ul>
 
             </div>
+
+            <div class="container__location--hours  us">
+                <h2 class="title__location"> Contact Us</h2>
+                <ul>
+                    <li>176 W strert name, New York,NY 10014 </li>
+                    <li>Email: <a href="#">info@yoursite.com</a></li>
+                    <li>Telefone: <a href="#">+1(800)123-4566</a></li>
+                </ul>
+
+            </div>
+
+            <div class="container__location--hours letter ">
+
+                <h2 class="title__location"> Suscribe Newletter</h2>
+
+                <form class="message" action="">
+                    <input type="text" placeholder="Email Address">
+                    <span><img style="width: 25px;" src="/src/assets/images/mensaje.svg" alt="" srcset=""></span>
+                </form>
+            </div>
+
         </div>
+
 
     </section>
 
