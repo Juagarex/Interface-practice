@@ -723,15 +723,21 @@ transition: all .3s ease;
 
 .container__location--list{
 
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  width: 100%;
-  justify-items: center;
-  text-align: center;
-  align-content: center ;
-  
-  vertical-align:middle;
+display: grid;
+
+gap: 0.5rem;
+
+grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+
+width: 100%;
+
+justify-items: center;
+
+text-align: center;
+
+align-content: center;
+
+vertical-align:middle;
 }
 
 .container__location--img{
