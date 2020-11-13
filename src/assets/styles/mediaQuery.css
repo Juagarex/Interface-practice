@@ -4,6 +4,11 @@
                     .topnav a.icon {
                       float: right;
                       display: block;
+                      padding-right: 45px;
+                    }
+
+                    .topnav a {
+                        font-size: 2rem;
                     }
 
                     .tab button{
@@ -18,8 +23,10 @@
 
                     .topnav{
                         position: fixed;
-                        margin-top: 10px;
-                        background-color:rgba(255, 255, 255, 0.74)
+                        padding-top: 10px;
+                        background-color:rgba(255, 255, 255, 0.74);
+                        height: 60px;
+                        
                     }
                     .topnav.responsive {
                         position: fixed;
