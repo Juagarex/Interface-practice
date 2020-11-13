@@ -61,3 +61,13 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function reload() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav responsive") {
+    x.className += "topnav";
+  } else {
+    x.className = "topnav responsive";
+  }
+
+}

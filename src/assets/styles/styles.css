@@ -38,43 +38,37 @@ html{
     position: absolute;
 }
 
-.header__container{
-width: 100%;
-display: flex;
-justify-content: flex-end;
+.header__container{width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
 }
 
- .header__container--nav{
-     justify-content: flex-end;
-     align-content: flex-end;
-     display: flex;
- }
- 
- .header__container--nav ul {
-   display:flex;
-   /* justify-content: center; */
-   list-style: none;
-   font-size: 1.5rem;
- }
-
- .header__container--nav ul a{
-     display: flex;
-     align-items: center;
-     text-decoration: none;
-     color: black;
-
- }
- .header__container--nav ul li {
-     padding: 1.5em;
-     color: var(--color-Text);
-     font-weight: 600;
-  }
   .topnav {
-    overflow: hidden; 
-    display: flex;
+    overflow: hidden;
     width: 100%;
-    justify-content: space-around;
+  }
+
+
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--font-Principal);
+    font-size: 2.5rem;
+    color: var(--color-Text);
+    font-weight: 400;
+  }
+  .topnav ul  li {
+    list-style: none;
+    text-align: start;
+    text-decoration-line: none;
+    font-size: 1.5rem;
     
+
+
   }
 
   .topnav .icon {
@@ -340,6 +334,8 @@ justify-content: flex-end;
       border-bottom: 1px solid var(--color-Primary);
       justify-content:center;
       align-items: center;
+      width: 100%;
+      font-size: 0.2rem;
     }
     
     /* Style the buttons inside the tab */
