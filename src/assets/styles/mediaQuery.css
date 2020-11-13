@@ -16,15 +16,26 @@
                         font-size: 1.5rem;
 
                     }
+                    .hoursAtention{
+                        font-size: 1.5rem;
+                        width: 90%;
+                        height: 60px;
+                    }
     
                   }
                   
                   @media screen and (max-width: 600px) {
+                    .screen{
+                        display: none;
+                    }
+
+                    
 
                     .topnav{
                         position: fixed;
                         padding-top: 10px;
                         background-color:rgba(255, 255, 255, 0.74);
+                        width: 100%;
                         
                         
                     }
@@ -77,6 +88,11 @@
 
 
 @media screen and (min-width:500px) and ( max-width:799px) {
+    .topnav a{
+        font-size: 2rem;
+
+    }
+
     #hero--title{
       font-size: 5.5rem;
     }
@@ -103,11 +119,16 @@
 
             }
 
+            .hoursAtention{
+                font-size: 2rem;
+                width: 70%;
 
+            }
 
-            
-            
-            }@media screen and (min-width:300px) and ( max-width:499px) {
+          
+
+            }
+            @media screen and (min-width:300px) and ( max-width:499px) {
 
               
                 .hero__container{
@@ -147,6 +168,16 @@
                     width: 100%;
                     font-size: 1.5rem;
                     text-align: center;
+                }
+
+                .slider{
+                    width: 90%;
+                    margin-bottom:10px;
+                }
+
+                .card__review article{
+                    font-size: 1.5rem;
+                    line-height: 2.4rem;
                 }
     
                 

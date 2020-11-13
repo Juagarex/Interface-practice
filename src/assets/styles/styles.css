@@ -46,7 +46,7 @@ html{
 
   .topnav {
     overflow: hidden;
-    width: 100%;
+   
   }
 
 
@@ -573,7 +573,6 @@ html{
   background-color: white;
   width: 80%;
   padding: 30px;
-
   position: relative;
 }
 .slider ul li{
@@ -736,10 +735,10 @@ transition: all .3s ease;
   list-style: none;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
   width: 100%;
   justify-content: center;
-  place-items: baseline;
+  /* place-items: baseline; */
 }
 
 .container__location--img{
@@ -798,14 +797,9 @@ font-weight: 400;
   color: var(--color-Text);
   font-family: var(--font-boby);
   font-weight: 600;
-  list-style: n;
 }
 
 
-.letter{
-
-/* display: none; */
-}
 
 .message {
   align-content: center;
