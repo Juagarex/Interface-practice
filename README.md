@@ -1,24 +1,26 @@
----
-# HELLO DEVPS:
-  Hola, Soy Juan Pablo, o JuanDevp, o Juagarex, y aquí encontrarás la
-  información sobre los proyectos en los que me divertido, formado y concentrado
-  alrededor de mi experiencia como desarrollador Web.
----
+# HELLO DEVPS
+
+## HELLO DEVPS:
+
+Hola, Soy Juan Pablo, o JuanDevp, o Juagarex, y aquí encontrarás la información sobre los proyectos en los que me divertido, formado y concentrado
+
+### alrededor de mi experiencia como desarrollador Web.
+
+### Cuisene page
+
+Cuisene page es un ejercicio de practica de HTML y CSS, donde al replicar un diseño de IU, se reta al estudiante a planear, diseñar y desarrollar el page más similar posible a su guía original.  
 
 
+![](.gitbook/assets/imagefeed.png)
 
-## Cuisene page
-
-Cuisene page es un ejercicio de practica de HTML y CSS, donde al replicar un diseño de IU, se reta al estudiante a planear, diseñar y desarrollar el page más similar posible a su guía original.
-
-## Tecnologías usadas
+### Tecnologías usadas
 
 * HMTL
 * CSS
 * JAVASCRIPT
 * GIT
 
-## Recomendaciones
+### Recomendaciones
 
 Encaso de que querer copiar o usar esta información y código te recomiendo lo siguiente:
 
@@ -40,7 +42,7 @@ Código para clonar con protocoló Github CLI:
 gh repo clone Juagarex/Interface-practice
 ```
 
-### Gracias por ayudarme a mejorar, y recuerda \#nuncaparesdeaprender
+#### Gracias por ayudarme a mejorar, y recuerda \#nuncaparesdeaprender
 
 Platzi Master 💚
 
