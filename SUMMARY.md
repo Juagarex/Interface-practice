@@ -1,4 +1,5 @@
 # Table of contents
 
-* [HELLO DEVPS](README.md)
+* [Cuisine page](README.md)
+* [Challenge Loops](challenge-loops.md)
 
